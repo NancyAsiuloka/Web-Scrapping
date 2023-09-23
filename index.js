@@ -1,3 +1,3 @@
 import { getHTML } from './lib/scrapper';
 
-console.log(getHTML);
+console.log(getHTML());
