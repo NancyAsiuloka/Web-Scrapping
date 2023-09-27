@@ -1,8 +1,8 @@
 
-const { getHTML } = require ('./lib/scrapper.js');
+const { getHTML, getTwitterFollowers } = require ('./lib/scrapper.js');
 
 async function go(){
-    console.log(await getHTML('https://www.twitter.com/wesbos'));
+    getTwitterFollowers(await getHTML('https://www.twitter.com/wesbos'));
 }
 
 go();
